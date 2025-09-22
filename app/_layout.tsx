@@ -15,7 +15,9 @@ export default function RootLayout() {
   const colorScheme = useColorScheme();
 
   const [loaded] = useFonts({
+    PoppinsBold: require("../assets/fonts/Poppins-Bold.ttf"),
     PoppinsRegular: require("../assets/fonts/Poppins-Regular.ttf"),
+    PoppinsSemiBold: require("../assets/fonts/Poppins-SemiBold.ttf"),
   });
 
   if (!loaded) return null;
